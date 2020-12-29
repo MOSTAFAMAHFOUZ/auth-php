@@ -1,5 +1,6 @@
 <?php  include('inc/header.php');  ?> 
 
+<?php  require_once('inc/db.php');  ?>
 
     <div class="container">
         <div class="row">
