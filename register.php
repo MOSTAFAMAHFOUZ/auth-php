@@ -1,4 +1,7 @@
 <?php  include('inc/header.php');  ?> 
+<?php 
+    if(isset($_SESSION['user_name'])) header("Location:show-data.php");
+?>
 
 
     <div class="container">
