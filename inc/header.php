@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
 
-    <title>Login System Using PHP</title>
+    <title> Registration System Using PHP</title>
   </head>
   <body>
 
@@ -40,6 +40,12 @@
                     <a class="nav-link" href="register.php">Register</a>
                 </li>
                 <?php else: ?>
+                    <li class="nav-item">
+                    <a class="nav-link" href="change-password.php">Change Password</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="all-users.php">All Users</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Logout</a>
                 </li>
