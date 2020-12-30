@@ -10,6 +10,9 @@
             </div>
             <div class="col-sm-6 mx-auto">
                 <div class="border p-5 my-3">
+                    <?php if(isset($_SESSION['error'])):  ?>
+                        <div class="alert alert-danger text-center"><?php echo $_SESSION['error']; unset ($_SESSION["error"]); ?></div>
+                    <?php endif; ?>
                     <form action="handler/login.php" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control" name="email" placeholder="Your Email">

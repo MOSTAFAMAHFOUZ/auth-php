@@ -1,6 +1,6 @@
 <?php  include('inc/header.php');  ?> 
 <?php 
-    if(isset($_SESSION['user_name'])) header("Location:show-data.php");
+    if(!isset($_SESSION['user_name'])) header("Location:index.php");
 ?>
 
     <div class="container">

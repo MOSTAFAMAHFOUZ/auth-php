@@ -28,13 +28,14 @@ if(isset($_POST['submit']))
         }
         else 
         {
-            echo "error";
+            $_SESSION['error'] = "Email or Password Not Correct";
         }
     }
     else 
     {
-        echo "Not Exist";
+        $_SESSION['error'] = "This Email Not Exist !";
     }
+    header("Location:../login.php");
 
 }
 
